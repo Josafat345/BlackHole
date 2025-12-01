@@ -1,4 +1,4 @@
-# Black Hole Kerr – GPU Ray Marching (Python + ModernGL)
+# Black Hole Kerr – GPU (Python + ModernGL)
 
 Este proyecto es un experimento visual de un agujero negro tipo Kerr (aproximado) renderizado en la GPU mediante ray marching, usando Python, ModernGL y GLSL.
 
