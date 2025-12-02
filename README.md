@@ -65,20 +65,20 @@ El simulador no resuelve la métrica de Kerr exacta, pero implementa una aproxim
    \]$$
 
    donde:
-   - \( \vec{r} \) es la posición del rayo,
-   - \( \vec{v} \) es la dirección (velocidad unitaria) del rayo,
-   - \( \nabla \ln n \) se obtiene numéricamente en el shader.
+   - $\( \vec{r} \)$ es la posición del rayo,
+   - $\( \vec{v} \)$ es la dirección (velocidad unitaria) del rayo,
+   - $\( \nabla \ln n \)$ se obtiene numéricamente en el shader.
 
 2. **Corrección tipo Kerr (frame dragging)**  
    Se agrega un término de “arrastre” **azimutal**:
 
-   \[
+   $$\[
    \vec{a}_{fd} \propto \omega(r)\,\big( \hat{\varphi} - (\hat{\varphi}\cdot \vec{v}) \vec{v} \big)
-   \]
+   \]$$
 
    donde:
-   - \( \hat{\varphi} \) es el versor tangencial en el plano XZ,
-   - \( \omega(r) \) depende del espín adimensional \( a \) y la masa \( M \),
+   - $\( \hat{\varphi} \)$ es el versor tangencial en el plano XZ,
+   - $\( \omega(r) \)$ depende del espín adimensional $\( a \)$ y la masa $\( M \)$,
    - El parámetro `uA` (0–0.99) controla la intensidad de ese espín.
 
 3. **Integración numérica (RK2)**  
@@ -97,7 +97,7 @@ El simulador no resuelve la métrica de Kerr exacta, pero implementa una aproxim
    Durante la integración se detectan:
 
    - **Disco de acreción**:  
-     Intersección con el plano \( y = 0 \). Se calcula el radio areal \( r_A \) y se comprueba si está entre `uDiskInnerR` y `uDiskOuterR` (aro delgado).  
+     Intersección con el plano $\( y = 0 \)$. Se calcula el radio areal $\( r_A \)$ y se comprueba si está entre `uDiskInnerR` y `uDiskOuterR` (aro delgado).  
      El color se modula con:
      - Tono base naranja (`uDiskBaseCol`),
      - Región más caliente rojiza (`uDiskHotCol`),
