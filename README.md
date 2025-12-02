@@ -57,7 +57,7 @@ Además, el código ajusta dinámicamente la **escala física** (masa efectiva, 
 El simulador no resuelve la métrica de Kerr exacta, pero implementa una aproximación basada en:
 
 1. **Índice óptico equivalente (Schwarzschild isotrópico)**  
-   Se modela el espacio-tiempo como un medio con índice de refracción efectivo \( n(\rho) \).  
+   Se modela el espacio-tiempo como un medio con índice de refracción efectivo $\( n(\rho) \)$.  
    A partir de una forma de la Ley de Fermat en relatividad, se puede escribir una aceleración óptica:
 
    \[
